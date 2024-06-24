@@ -1,0 +1,30 @@
+[window]
+#padding = {x = 5, y = 5}
+dimensions = {columns=60, lines=22}
+position = "None"
+
+[font]
+normal = {family = "Hack Nerd Font", style = "Regular"}
+size = 12.0
+
+[colors]
+selection = {text = "#ffffff", background = "#a15cef"}
+
+[colors.primary]
+foreground = "#ffffff"
+background = "#111111"
+
+[cursor]
+style = {shape = "BEAM", blinking = "ON"}
+vi_mode_style = {shape = "BEAM", blinking = "ON"}
+#unfocused_hollow = false
+thickness = 0.10
+
+[terminal]
+osc52 = "CopyPaste"
+
+[keyboard]
+bindings = [
+    { key = "C", mods = "Control", chars = "\u0003"}
+]
+
