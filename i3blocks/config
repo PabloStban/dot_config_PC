@@ -1,0 +1,27 @@
+[separator]
+command=echo " "
+separator=true
+interval=3600
+
+[clipboard]
+command=~/.config/i3blocks/clipboard.sh
+interval=5
+
+[time]
+command=date '+%H:%M'
+interval=60
+
+[date]
+command=date '+%Y-%m-%d'
+interval=3600  # Actualiza cada hora (3600 segundos)
+
+[language]
+command=~/.config/i3blocks/language.sh
+interval=5
+
+[separator]
+command=echo ""
+separator=true
+interval=3600
+
+
