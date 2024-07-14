@@ -12,7 +12,8 @@ selection = {text = "#ffffff", background = "#a15cef"}
 
 [colors.primary]
 foreground = "#ffffff"
-background = "#111111"
+#background = "#111111"
+background = "#282a36"
 
 [cursor]
 style = {shape = "BEAM", blinking = "ON"}
