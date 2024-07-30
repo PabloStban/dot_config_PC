@@ -17,7 +17,8 @@ polybar ip_internet -c ~/.config/polybar/current.ini &   # ip
 polybar target -c ~/.config/polybar/current.ini &        # target
 polybar vpn_status -c ~/.config/polybar/current.ini &    # vpn
 polybar terciaryright -c ~/.config/polybar/current.ini & # language
-#polybar cuaternaryright -c ~/.config/polybar/current.ini & # language
+polybar clipboard -c ~/.config/polybar/current.ini &     # clipboard
+#polybar cuaternaryright -c ~/.config/polybar/current.ini & # systray
 
 ## Right bar
 #polybar top -c ~/.config/polybar/current.ini &

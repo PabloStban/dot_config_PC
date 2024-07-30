@@ -25,7 +25,7 @@ bspc rule -a Qalculate-gtk state=floating
 # Modificados
 sed -i "s/corner-radius = 8/corner-radius = 15/" /home/pablo/.config/picom.conf
 xsetroot -cursor_name left_ptr
-feh --bg-fill $HOME/Pictures/arch.png
+feh --bg-fill $HOME/Pictures/arch2.jpg
 ~/.config/polybar/launch.sh
 conky &
 bspc config focus_follows_pointer false
