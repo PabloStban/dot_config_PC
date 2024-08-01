@@ -19,15 +19,18 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+
+# Propios
 bspc rule -a Alacritty state=floating
 bspc rule -a Qalculate-gtk state=floating
+bspc rule -a tk state=floating
 
 # Modificados
 sed -i "s/corner-radius = 8/corner-radius = 15/" /home/pablo/.config/picom.conf
 xsetroot -cursor_name left_ptr
-feh --bg-fill $HOME/Pictures/arch2.jpg
+feh --bg-fill $HOME/Pictures/universe.jpg
 ~/.config/polybar/launch.sh
-conky &
+#conky &
 bspc config focus_follows_pointer false
 picom &
 udiskie -t &
