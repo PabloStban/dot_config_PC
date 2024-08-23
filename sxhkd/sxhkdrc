@@ -181,7 +181,7 @@ super + ctrl + {Left,Down,Up,Right}
 super + shift + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-super + F1
-  #polybar-msg -p "$(pgrep -f "polybar Apuntes")" cmd toggle  
+super + n
+  #polybar-msg -p $(pgrep -f "polybar Apuntes") cmd toggle  
   /home/pablo/.config/bin/bar_toggle.sh
 

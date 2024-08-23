@@ -1,6 +1,6 @@
 #!/bin/bash
 
 icono='%{F#2495e7}%{T3} %{F#ffffff}%{T1}'
-nota='Important notes'
+nota='Modificar notas | New nota'
 
 echo " "$icono$nota
