@@ -26,7 +26,7 @@ polybar songs -c ~/.config/polybar/current.ini &         # cmus
 #polybar top -c ~/.config/polybar/current.ini &
 #polybar primary -c ~/.config/polybar/current.ini &
 #polybar secondaryright -c ~/.config/polybar/current.ini &
-polybar Apuntes -c ~/.config/polybar/current.ini & #apuntes
+#polybar Apuntes -c ~/.config/polybar/current.ini & #apuntes
 
 ## Center bar
 polybar primary -c ~/.config/polybar/workspace.ini & # workstation

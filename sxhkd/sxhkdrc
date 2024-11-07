@@ -182,6 +182,6 @@ super + shift + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 super + n
-  #polybar-msg -p $(pgrep -f "polybar Apuntes") cmd toggle  
-  /home/pablo/.config/bin/bar_toggle.sh
+  /home/pablo/Documents/Archivos/bash/Utilities/keyboard_language.sh 
+  #/home/pablo/Documents/Pruebas/poly.sh
 

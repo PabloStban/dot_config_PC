@@ -34,14 +34,14 @@
     
     highlight:     underline bold #eceff4;
 
-    transparent: rgba(46,52,64,0);
+    transparent: rgba(26, 27, 38, 1);
 }
 
 window {
     location: center;
     anchor:   center;
     transparency: "screenshot";
-    padding: 10px;
+    padding: 3px;
     border:  0px;
     border-radius: 6px;
 
@@ -65,7 +65,7 @@ message {
 }
 
 inputbar {
-    color: @nord6;
+    color: @nord5;
     padding: 11px;
     background-color: #3b4252;
 
@@ -88,12 +88,12 @@ listview {
     border-radius: 0px 0px 6px 6px;
     border-color: @nord10;
     border: 0px 1px 1px 1px;
-    background-color: rgba(46,52,64,0.9);
+    background-color: rgba(26, 27, 38, 1);
     dynamic: false;
 }
 
 element {
-    padding: 3px;
+    padding: 3px 8px 3px 8px;
     vertical-align: 0.5;
     border-radius: 4px;
     background-color: transparent;

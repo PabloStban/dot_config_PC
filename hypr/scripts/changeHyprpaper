@@ -1,0 +1,21 @@
+#!/bin/bash
+
+SCRIPTSDIR=$HOME/.config/hypr/scripts
+DIR=$HOME/.config/hypr/bg
+PICS=($(ls ${DIR}))
+
+RANDOMPICS=${PICS[$RANDOM % ${#PICS[@]}]}
+
+# Verificar si hyprpaper está corriendo, si no, iniciarlo
+if ! pgrep -x "hyprpaper" >/dev/null; then
+  hyprpaper &
+  sleep 1 # Esperar un segundo para asegurarse de que hyprpaper se inicie correctamente
+fi
+
+# Cambiar el fondo de pantalla
+hyprctl hyprpaper preload "${DIR}/${RANDOMPICS}"
+hyprctl hyprpaper wallpaper ",${DIR}/${RANDOMPICS}"
+notify-send -i ${DIR}/${RANDOMPICS} "Wallpaper Changed" ${RANDOMPICS}
+hyprctl hyprpaper unload unused
+
+$SCRIPTSDIR/generateLockscreenWallpaper.sh "${DIR}/${RANDOMPICS}"

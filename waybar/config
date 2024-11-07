@@ -1,0 +1,23 @@
+{
+  "include": "~/.config/waybar/modules",
+  "layer": "top",
+  "exclusive": true,
+  "passthrough": false,
+  "position": "top",
+  "fixed-center": true,
+  "spacing": 0,
+  "start_hidden": true,
+  /*"gtk-layer-shell": true,*/
+  "margin-top": 5,     /* Margen superior */
+  "margin-right": 5, /* Margen derecho */
+  "margin-bottom": 0, /* Margen inferior */
+  "margin-left": 5,  /* Margen izquierdo */
+
+
+  /*"modules-left": ["custom/icono", "hyprland/workspaces", "hyprland/submap", "cpu", "custom/cputemp", "memory", "disk", "custom/waybar-mpris"],*/
+  "modules-left": ["custom/arch","clock","hyprland/language"],
+  /*"modules-center": ["hyprland/window"],*/
+  "modules-center": ["hyprland/workspaces"],
+  /*"modules-right": ["idle_inhibitor", "custom/uptime", "backlight", "wireplumber", "custom/vpn_check", "network", "battery", "custom/updater", "tray", "clock", "custom/power"],*/
+  "modules-right": ["pulseaudio","idle_inhibitor","custom/cycle_wall","tray"],
+}
