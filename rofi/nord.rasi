@@ -28,11 +28,11 @@
 	nord14: #a3be8c;
 	nord15: #b48ead;
 
-    foreground:  @nord9;
+    foreground:  #1f2335;
     backlight:   #ccffeedd;
     background-color:  transparent;
     
-    highlight:     underline bold #eceff4;
+    highlight:     underline bold #737aa2;
 
     transparent: rgba(26, 27, 38, 1);
 }
