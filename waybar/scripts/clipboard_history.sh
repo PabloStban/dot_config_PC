@@ -1,22 +1,33 @@
 #!/bin/bash
 
-# Archivo donde se almacenará el historial de copias
-HISTORY_FILE="$HOME/.clipboard_history"
-touch clipboard.tmp
+:'clip="$(wl-paste)"
+longitud=${#clip}
 
-# Función para actualizar el historial y mostrar el último elemento copiado
-update_clipboard_history() {
-  # Obtiene el contenido actual del portapapeles
-  current_clip="$(wl-paste)"
-  comparar << .clipboard.tmp
+if  [[ longitud -gt 40 ]]; then
+  palabra="${clip:0:40}..."
+  printf "%s\n" "$palabra"
+else
+  printf "%s\n" "$clip"
+fi'
 
-  # Si el contenido actual no es igual al último en el historial, lo añade
-  if [[ "$comparar" != "$current_clip" ]]; then
-    echo "$current_clip" >>"$HISTORY_FILE"
+
+# Asegúrate de que wl-paste está disponible en tu sistema
+clip="$(wl-paste -n)"
+longitud=${#clip}
+
+# Comprobamos si el portapapeles contiene una imagen
+if wl-paste -l | grep -q 'image'; then
+  # Si es una imagen, mostramos el texto que elijas
+  echo "   "
+else
+  # Si no es una imagen, procedemos con la lógica anterior para texto
+  if [[ $longitud -gt 40 ]]; then
+    palabra="${clip:0:40}..."
+    printf "%s\n" "$palabra"
+  else
+    printf "%s\n" "$clip"
   fi
+fi
 
-  comparar="$(wl-paste)"
 
-  # Muestra el último elemento copiado
-  #echo "$current_clip"
-}
+

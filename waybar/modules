@@ -29,15 +29,21 @@
     "tooltip-format": "Change Mode",
   },
 
+"custom/nota":{
+    "format":" ",
+    "on-click": "gedit $HOME/Documents/Apuntes.txt",
+    "tooltip-format": "Change Mode",
+  },
+
   "custom/sep": {
-    "exec": "echo '󱋱'",
+    "exec": "echo '|'",
     "format": "{}",
     "interval": 3600
   },
 
   "hyprland/language": {
     /*"format": "{layout}", */
-    "format": "{short} {variant}",
+    "format": "| {short} {variant} ",
     "interval": 1
   },
 
@@ -98,7 +104,7 @@
     "interval": 60,
     "align": 0,
     "rotate": 0,
-    "format": "| {:%d-%m-%Y <span rise='1000'>|</span> %H:%M} |",
+    "format": "| {:%d-%m-%Y <span rise='1000'>|</span> %H:%M}",
     "format-alt": "{:%A <span rise='1000'>⁙</span> %d %B %Y <span rise='1000'>⁙</span> %I:%M %p}",
     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
     "on-click-right": "~/.config/hypr/scripts/changeHyprpaper",
@@ -217,12 +223,36 @@
 
   "tray": {
     "spacing": 5,
-    "icon-size": 16,
+    "icon-size": 14,
+
   },
 
   "hyprland/window": {
-    "format": "<span rise='1000'>⁙</span> {} <span rise='1000'>⁙</span>",
-    "separate-outputs": true
+    "format": "{title}",
+    "icon-size": 10,
+    "rewrite": {
+        "(.*) — Mozilla Firefox": "Firefox",
+        "^Mozilla Firefox": "Firefox",
+        "^nvim(.*)": "Nvim",
+        "^kitty-float": "Terminal",
+        "^pablo@archlinux:(.*)": "Terminal",
+        "^root@archlinux:(.*)": "Terminal-root",
+        "^rofi(.*)": "Menu",
+        "(.*) — LibreOffice Calc": "Calc",
+        "(.*) — LibreOffice Writer": "Writer",
+        "(.*) — LibreOffice Impress": "Impress",
+        "(.*) — LibreOffice Draw": "Draw",
+        "(.*) - gedit": "Gedit",
+        "(.*) - Thunar": "Thunar",
+        "(.*) - VLC Media Player": "VLC Media Player",
+        "(.*) — Okular": "Okular",
+        "(.*).ctb - (.*)": "Cherry Tree",
+        "^Burp Suite(.*)": "Burp Suite",
+        "^KiCad(.*)": "KiCad",
+        "^qBittorrent(.*)": "qBittorrent",
+        "^The Wireshark(.*)": "Wireshark",
+    },
+    "separate-outputs": true,
   },
 
   "idle_inhibitor": {
@@ -251,9 +281,15 @@
   },
 
   "custom/clipboard": {
-    "exec": "~/.config/waybar/scripts/clipboard_history.sh",
-    "on-click": "~/.clipboard_history",
-    "tooltip": false
+    "exec": "$HOME/.config/waybar/scripts/clipboard_history.sh",
+    "format": "{}",
+    "interval": 2,
+  },
+
+ "custom/groups": {
+    "exec": "$HOME/.config/waybar/scripts/groups.sh",
+    "format": "  {}",
+    "interval": 2,
   },
 
   "pulseaudio": {

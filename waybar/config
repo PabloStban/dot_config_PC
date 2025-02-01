@@ -15,9 +15,10 @@
 
 
   /*"modules-left": ["custom/icono", "hyprland/workspaces", "hyprland/submap", "cpu", "custom/cputemp", "memory", "disk", "custom/waybar-mpris"],*/
-  "modules-left": ["custom/arch","clock","hyprland/language"],
+  /*"modules-left": ["custom/arch","clock","hyprland/language"],*/
+  "modules-left": ["custom/arch","custom/sep","hyprland/workspaces","custom/sep","hyprland/window","custom/sep","custom/clipboard","custom/sep"],
   /*"modules-center": ["hyprland/window"],*/
-  "modules-center": ["hyprland/workspaces"],
+  /*"modules-center": ["hyprland/workspaces"],*/
   /*"modules-right": ["idle_inhibitor", "custom/uptime", "backlight", "wireplumber", "custom/vpn_check", "network", "battery", "custom/updater", "tray", "clock", "custom/power"],*/
-  "modules-right": ["pulseaudio","idle_inhibitor","custom/cycle_wall","tray"],
+  "modules-right": ["custom/sep","custom/groups","custom/sep","custom/nota","custom/sep","pulseaudio","idle_inhibitor","custom/cycle_wall","tray","hyprland/language","clock"],
 }

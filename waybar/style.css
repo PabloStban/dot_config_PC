@@ -2,7 +2,7 @@
 
 * {
   font-family: HackNerdFont;
-  font-size: 15px;
+  font-size: 14px;
   border: none;
   border-radius: 0px;
   min-height: 0;
@@ -12,14 +12,18 @@
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
+  font-size: 11;
   /*background: @theme_base_color;*/
   /* border: 3px solid @overlay0; */
   border-radius: 10px;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: rgba(137, 137, 137, 0.67);
   margin-right: 0px;
   padding: 0px;
   /*margin: 5px;*/
   /*background-color: #000000;*/
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 window#waybar.hidden {
@@ -51,7 +55,8 @@ window#waybar.hidden {
   border-radius: 10px;
   /*padding: 1px 10px 1px 14px;*/
   margin: 0px;
-  /*background-color: rgba(0, 0, 0, 0.9);*/
+  /*background-color: rgba(10, 10, 10, 0.9);*/
+  /*background-color: transparent;*/
 }
 
 .modules-left{
@@ -60,7 +65,7 @@ window#waybar.hidden {
   transition-duration: 0.5s;
   border-radius: 10px;
   /*padding: 1px 12px 1px 12px;*/
-  /*background-color: rgba(0, 0, 0, 0.9);*/
+  /*background-color: rgba(10, 10, 10, 0.9);*/
   margin: 0px;
 }
 
@@ -94,15 +99,15 @@ window#waybar.hidden {
 
 #language {
   color: @blanco;
-  background-color: #000000;
-  /*font-size: 16px;*/
-  padding: 1px 15px 1px 7px;
-  border-radius: 0px 10px 10px 0px;
+  /*background-color: #000000;*/
+  font-size: 14px;
+  padding: 1px 7px 1px 1px;
+  /*border-radius: 0px 10px 10px 0px;*/
 }
 
 #idle_inhibitor {
   color: @blanco;
-  background-color: #000000;
+  /*background-color: #000000;*/
   font-size: 19px;
   padding: 1px 2px 1px 2px;
   border-radius: 0px;
@@ -139,9 +144,9 @@ window#waybar.hidden {
   transition-property: background-color;
   transition-duration: 0.5s;
   border-radius: 0px 0px 0px 0px;
-  padding: 1px 1px 1px 1px;
+  padding: 1px 15px 1px 1px;
   /*background-color: #000000;*/
-  background-color: rgba(0, 0, 0, 0.9);
+  /*background-color: rgba(0, 0, 0, 0.9);*/
 }
 
 #cpu {
@@ -159,10 +164,9 @@ window#waybar.hidden {
 #tray {
   transition-property: background-color;
   transition-duration: 0.5s;
-  border-radius: 0px 10px 10px 0px;
-  padding: 1px 15px 1px 1px;
-  background-color: rgba(0, 0, 0, 0.9);
-  margin-right: 0px;
+  /*border-radius: 0px 10px 10px 0px;*/
+  padding: 1px 7px 1px 1px;
+  /*background-color: rgba(0, 0, 0, 0.9);*/
 }
 
 #tray > .passive {
@@ -176,11 +180,10 @@ window#waybar.hidden {
 #workspaces{
   transition-property: background-color;
   transition-duration: 0.5s;
-  border-radius: 10px;
-  padding: 1px 4px 1px 7px;
-  /*margin: 5px;*/
+  /*border-radius: 10px;*/
+  padding: 1px 1px 1px 7px;
   /*background-color: #000000;*/
-  background-color: rgba(0, 0, 0, 0.9);
+  /*background-color: rgba(10, 10, 10, 0.9);*/
 }
 
 #custom-cycle_wall{
@@ -191,7 +194,22 @@ window#waybar.hidden {
   /*color:@blanco;*/
   /*margin: 5px;*/
   /*background-color: #000000;*/
-  background-color: rgba(0, 0, 0, 0.9);
+  /*background-color: rgba(0, 0, 0, 0.9);*/
+}
+
+#custom-clipboard{
+  font-size: 14;
+  padding: 1px 7px;
+}
+
+#custom-groups{
+  font-size: 14;
+  padding: 1px 7px;
+}
+
+#custom-nota{
+  font-size: 14;
+  padding: 1px 0 1px 9px;
 }
 
 #workspaces button {
@@ -274,7 +292,8 @@ window#waybar.hidden {
 }
 
 #window {
-  color: @mauve;
+  color: #ffffff;
+  padding: 1px 7px 1px 7px;
 }
 
 #custom-waybar-mpris {
@@ -294,18 +313,22 @@ window#waybar.hidden {
 #custom-arch{
   color: @arch;
   font-size:16;
-  background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 10px 0px 0px 10px;
-  padding: 1px 1px 1px 15px;
+  /*background-color: rgba(0, 0, 0, 0.9);*/
+  /*border-radius: 10px 0px 0px 10px;*/
+  padding: 1px 3px 1px 15px;
+}
 
+#custom-sep{
+  font-size: 14;
+  padding: 1px;
 }
 
 #pulseaudio{
   /*color: @blanco;*/
-  background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 10px 0px 0px 10px;
+  /*background-color: rgba(0, 0, 0, 0.9);*/
+  /*border-radius: 10px 0px 0px 10px;*/
   font-size:18;
-  padding: 1px 2px 1px 15px;
+  padding: 1px 2px 1px 7px;
 }
 
 tooltip{
