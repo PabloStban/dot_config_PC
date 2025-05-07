@@ -1,0 +1,19 @@
+{
+  "name": "bar-top",
+  "include": "~/.config/waybar/modules.json",
+  "layer": "top",
+  "exclusive": true,
+  "passthrough": false,
+  "position": "top",
+  "fixed-center": true,
+  "spacing": 0,
+  "start_hidden": true,
+  "margin-top": 5,  
+  "margin-right": 5, 
+  "margin-bottom": 0, 
+  "margin-left": 5,  
+
+
+  "modules-left": ["custom/arch","custom/left1","hyprland/workspaces","custom/right1","hyprland/window","custom/left2","custom/clipboard","custom/leftin1"],
+  "modules-right": ["custom/rightin1","custom/groups","custom/sep","custom/nota","custom/right2","pulseaudio","idle_inhibitor","custom/cycle_wall","tray","custom/left3","hyprland/language","custom/right3","clock"]
+}

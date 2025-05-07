@@ -1,6 +1,6 @@
 #!/bin/bash
 
-target="No target"
+target="10.10.11.51"
 
 if [[ $target = "No target" ]]; then
   #	echo "%{F#e83030}󰩷 %{F#ffffff} $target%{u-}"

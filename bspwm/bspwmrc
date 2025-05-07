@@ -28,7 +28,7 @@ bspc rule -a tk state=floating
 # Modificados
 sed -i "s/corner-radius = 8/corner-radius = 15/" /home/pablo/.config/picom.conf
 xsetroot -cursor_name left_ptr
-feh --bg-fill $HOME/Pictures/universe.jpg
+feh --bg-fill $HOME/Pictures/samuraipc.jpg
 ~/.config/polybar/launch.sh
 #conky &
 bspc config focus_follows_pointer false

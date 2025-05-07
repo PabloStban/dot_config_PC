@@ -34,7 +34,7 @@
     
     highlight:     underline bold #737aa2;
 
-    transparent: rgba(26, 27, 38, 1);
+    transparent: #1f2335;
 }
 
 window {
@@ -58,20 +58,21 @@ mainbox {
 
 message {
     color: @nord0;
-    padding: 5;
+    padding: 10px;
     border-color: @foreground;
     border:  0px 2px 2px 2px;
-    background-color: @nord7;
+    background-color: @background-color;
 }
 
 inputbar {
     color: @nord5;
     padding: 11px;
-    background-color: #3b4252;
+    margin: 10px;
+    background-color: #3b4261;
 
-    border: 1px;
-    border-radius:  6px 6px 0px 0px;
-    border-color: @nord10;
+    border: 0px;
+    border-radius:  6px 6px 6px 6px;
+    border-color: #9d7cd8;
 }
 
 entry, prompt, case-indicator {
@@ -79,16 +80,18 @@ entry, prompt, case-indicator {
     text-color:inherit;
 }
 
+
 prompt {
-    margin: 0px 1em 0em 0em ;
+    margin: 0px 5px 0em 0em ;
 }
 
 listview {
     padding: 8px;
+    margin: 0px 10px 10px 10px;
     border-radius: 0px 0px 6px 6px;
-    border-color: @nord10;
-    border: 0px 1px 1px 1px;
-    background-color: rgba(26, 27, 38, 1);
+    border-color: #9d7cd8;
+    border: 0px 0px 0px 0px;
+    background-color: @transparent;
     dynamic: false;
 }
 
@@ -98,17 +101,22 @@ element {
     border-radius: 4px;
     background-color: transparent;
     color: @foreground;
-    text-color: rgb(216, 222, 233);
+    text-color: #a9b1d6;
 }
 
 element selected.normal {
-	background-color: @nord7;
-	text-color: #2e3440;
+	background-color: #3b4261;
+	text-color: #ffffff;
 }
+
 
 element-text, element-icon {
     background-color: inherit;
     text-color:       inherit;
+}
+
+element-icon{
+  padding: 0px 10px 0px 0px;
 }
 
 button {
@@ -124,4 +132,8 @@ button {
 button selected normal {
     border: 2px 0px 2px 2px;
     border-color: @foreground;
+}
+
+* {
+    highlight: bold #bb9af7;
 }

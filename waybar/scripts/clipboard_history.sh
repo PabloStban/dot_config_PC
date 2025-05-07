@@ -15,6 +15,11 @@ fi'
 clip="$(wl-paste -n)"
 longitud=${#clip}
 
+if [[ $longitud -eq 0 ]];then
+  echo "--------"
+  exit 0
+fi
+
 # Comprobamos si el portapapeles contiene una imagen
 if wl-paste -l | grep -q 'image'; then
   # Si es una imagen, mostramos el texto que elijas

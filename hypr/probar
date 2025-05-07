@@ -1,0 +1,6 @@
+
+
+
+$pathImg = /home/pablo/Pictures/virutal.png
+#$pathImg = /home/pablo/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png
+

@@ -3,13 +3,13 @@ configuration {
     line-margin: 10;
 
     display-ssh:    " ";
-    display-run:    " ";
-    display-drun:    " ";
+    display-run:    " ";
+    display-drun:    " ";
     display-window: " ";
     display-combi:  " ";
-    show-icons:     false;
+    display-filebrowser:  "󰱽 ";
+    show-icons:     true;
 }
-
 
 @theme "~/.config/rofi/nord.rasi"
 
@@ -19,5 +19,5 @@ listview {
 }
 
 window {
-	width: 25%;
+	width: 30%;
 }
